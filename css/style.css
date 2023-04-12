@@ -601,12 +601,58 @@ a.active-menu{
 .footer-inner p::before{
     content: url(../img/social/left-star.png);
     position: absolute;
+    top: 43%;
+    left: 28%;
 }
 
+.footer-inner p::after{
+    content: url(../img/social/right-star.png);
+    position: absolute;
+    top: -48%;
+    right: 27%;
+}
 
+.social img{
+    padding: 25px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    width: 10%;
+    transition: all .5s;
+    border: 1.5px solid #2EECC5;
+    cursor: pointer;
+}
 
+.social a{
+    margin-right: 55px;
+}
 
+.social img:hover{
+    padding: 30px;
+    background: radial-gradient(77.86% 77.86% at 49.29% 50.71%, #2EECC5 0%, #00644F 100%);
+}
 
-.footer-bottom{
-    display: none;
+.social{
+    margin-bottom: 70px;
+}
+
+.footer-bottom p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom a{
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-bottom p::after{
+    content: '';
+}
+
+.footer-bottom p:before{
+    content: '';
 }
