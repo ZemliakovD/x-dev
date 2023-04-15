@@ -3,24 +3,29 @@
     nextArrow: '<button type="button" class="next-button"><i class="fa-solid fa-angle-right fa-beat" style="color: #2EECC5;"></i></button>',
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 370,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
+          arrows: true,
+          slidesToShow: 1,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
           slidesToShow: 1
         }
       }
@@ -35,21 +40,27 @@
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 481,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 371,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]

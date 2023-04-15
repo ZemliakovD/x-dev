@@ -422,6 +422,10 @@ a.active-menu{
     margin-bottom: 0;
 }
 
+.mob-button{
+    display: none;
+}
+
 .rates-inner h2{
     background: linear-gradient(87.77deg, #B5FEEF 10.96%, #2EECC5 259.77%);
     -webkit-background-clip: text;
@@ -658,6 +662,12 @@ a.active-menu{
 }
 
 @media (max-width: 575.98px) {
+
+    html, body {
+        /* Убирает прокрутку по горизонтале, для мобильной версии */
+        overflow-x: hidden;
+    }
+
     .navbar{
         padding-top: 55px;
         padding-bottom: 125px;
@@ -745,10 +755,10 @@ a.active-menu{
     }
 
     .main-banner img{
-        width: 270%;
+        width: 175%;
         position: absolute;
-        right: -175px;
-        top: -98px;
+        right: -16%;
+        bottom: -49.5vh;
     }
 
     .reasons{
@@ -843,6 +853,213 @@ a.active-menu{
     .consult{
         margin: 0px 0 -25px 115px;
     }
+
+    .partfolio{
+        margin-bottom: 135px;
+    }
+
+    .partfolio-inner{
+        flex-direction: column;
+        margin-bottom: 135px;
+    }
+
+    .partfolio-info{
+        width: 100%;
+    }
+
+    .partfolio-info h2{
+        font-size: 30px;
+        line-height: 33px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .partfolio-info p{
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .partfolio-button{
+        display: none;
+    }
+
+    .partfolio-card{
+        width: 100%;
+    }
+
+    .mob-button{
+        display: block;
+        margin: 0 auto;
+        padding: 12px 25px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .partfolio-slider{
+        margin-bottom: 100px;
+    }
+
+    .prev-button{
+        top: 105%;
+        left: 1%;
+        width: 45px;
+        height: 45px;
+    }
+
+    .next-button{
+        top: 105%;
+        left: 86%;
+        width: 45px;
+        height: 45px;
+    }
+
+    .rates-slider .prev-button {
+        left: 5%;
+        top: 102%;
+        width: 45px;
+        height: 45px;
+    }
+
+    .rates-slider .next-button {
+        top: 102%;
+        left: 83%;
+        width: 45px;
+        height: 45px;
+    }
+
+    .rates-slider-item{
+        margin: 0 auto;
+    }
+
+    .rates-inner h2{
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .rates-card-inner{
+        padding: 35px 25px 15px 25px;
+    }
+
+    .rates-card-inner h3{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+
+    .rates-card-inner p{
+        font-size: 12px;
+        line-height: 18px;
+        min-height: 190px;
+    }
+
+    .rates-card-cost p{
+        font-size: 16px;
+        line-height: 25px;
+        min-height: fit-content;
+    }
+
+    .rates-card-cost span{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .rates-button{
+        padding: 12px 20px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .order{
+        margin-bottom: 400px;
+    }
+
+    .order-inner{
+        padding: 30px 25px;
+    }
+
+    .order-info{
+        flex-direction: column;
+    }
+
+    .order-form-info{
+        width: 100%;
+    }
+
+    .order-form-banner{
+        width: 100%;
+    }
+
+    .order-form-banner img{
+        position: absolute;
+        top: 120px;
+        width: 100%;
+        left: 0;
+    }
+
+    .order-form-info h2{
+        font-size: 37px;
+        line-height: 41px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .order-form div{
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .order-form button{
+        display: block;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .footer-inner{
+        padding-bottom: 15px;
+    }
+
+    .footer-inner p{
+        display: none;
+    }
+
+    .social{
+        background: linear-gradient(73.49deg, #313134 -57.16%, #222224 3.42%, #292929 86.16%);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .social a{
+        margin-right: 10px;
+    }
+
+    .footer-bottom p{
+        display: block;
+        font-size: 9px;
+        line-height: 10px;
+        margin-bottom: 8px;
+    }
+
+    .footer-bottom a{
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 }
 
