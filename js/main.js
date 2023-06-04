@@ -83,3 +83,9 @@
     scrollTop: $(".footer").offset().top // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
    });
+
+   $("#me-order").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+    scrollTop: $(".order-info").offset().top // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+   });

@@ -8,7 +8,8 @@ body{
     font-size: 17px;
     line-height: 21px;
     color: rgba(255, 255, 255, 0.9);
-    background-color: #1E1E1E;   
+    background-color: #1E1E1E;
+    overflow-x: hidden;
 }
 
 h1{
@@ -57,8 +58,8 @@ h4{
 }
 
 .navbar{
-    padding-top: 60px;
-    padding-bottom: 105px;
+    padding-top: 20px;
+    padding-bottom: 60px;
     --bs-navbar-padding-y: 0;
 }
 
@@ -100,17 +101,9 @@ h4{
     line-height: 24px;
 }
 
-.specail-border{
-    height: 5px;
-    background: linear-gradient(90deg, rgba(42, 188, 158, 0) 0%, #2ABC9E 48.65%, rgba(42, 188, 158, 0) 100%);
-    margin-bottom: 85px;
-}
-
-a.active-menu{
-    color: #2CE8C2;
-}
-
-.menu-list-item button{
+.header-phone{
+    text-decoration: none;
+    color: #fff;
     padding: 14px 44px;
     color: #FFFFFF;
     background: rgba(46, 236, 197, 0.1);
@@ -122,10 +115,86 @@ a.active-menu{
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    transition: all .5s;
 }
 
-.header-button:hover{
+.header-phone:hover{
     border-radius: 10px;
+}
+
+.specail-border{
+    height: 5px;
+    background: linear-gradient(90deg, rgba(42, 188, 158, 0) 0%, #2ABC9E 48.65%, rgba(42, 188, 158, 0) 100%);
+    margin-bottom: 85px;
+}
+
+a.active-menu{
+    color: #2CE8C2;
+}
+
+.main-modal-content{
+    background: linear-gradient(91.69deg, #313134 -11.81%, #222224 23.9%, #12473C 60.63%, #292929 110.44%);
+}
+
+.modal-header{
+    border: none;
+}
+
+.main-modal-header p{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    background: linear-gradient(91.2deg, #B5FEEF 10.31%, #2EECC5 165.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 36px rgb(165 252 235 / 20%);
+}
+
+.main-modal-header a{
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    text-decoration: none;
+}
+
+.header-form input, .header-form textarea, .header-form select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 38px rgb(255 255 255 / 5%);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.header-form input::placeholder, .header-form textarea::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-form select{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-form option{
+    color: #161617;
+}
+
+.header-form button{
+    border: 1.5px solid #2EECC5;
+    box-shadow: 0px 0px 38px rgb(46 236 197 / 20%);
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 60px;
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.header-form button:hover{
+    box-shadow: none;
+    background: transparent;
+    border: 1.5px solid #2EECC5;
 }
 
 .main-info h1{
@@ -273,6 +342,8 @@ a.active-menu{
     font-size: 19px;
     line-height: 23px;
     position: relative;
+    text-decoration: none;
+    transition: all .5s;
 }
 
 .reasons-button::after{
@@ -287,6 +358,10 @@ a.active-menu{
     top: 12px;
     right: -10px;
     transition: all .5s;
+}
+
+.reasons-button:hover{
+    box-shadow: none;
 }
 
 .reasons-bottom{
@@ -353,7 +428,7 @@ a.active-menu{
 
 .partfolio-slider-item img{
     margin: 0 auto;
-    width: 99%;
+    width: 90%;
     border-radius: 10px;
 }
 
@@ -383,6 +458,7 @@ a.active-menu{
     font-size: 17px;
     line-height: 20px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .prev-button{
@@ -940,6 +1016,11 @@ a.active-menu{
         line-height: 33px;
     }
 
+    .rates-card{
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .rates-card-inner{
         padding: 35px 25px 15px 25px;
     }
@@ -1050,16 +1131,6 @@ a.active-menu{
         font-size: 9px;
         line-height: 10px;
     }
-
-
-
-
-
-
-
-
-
-
 
 }
 
